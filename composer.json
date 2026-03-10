@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/wrapper-user",
+    "description": "Package wrapper-user for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\WrapperUser\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/process": "^7.0",
+        "firebase/php-jwt": "^6.0",
+        "doctrine/doctrine-bundle": "^2.13",
+        "illuminate/support": "^11.0",
+        "symfony/cache": "^7.0",
+        "psc-acme/driver-auth": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "rector/rector": "^1.0",
+        "phpstan/phpstan": "^1.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
